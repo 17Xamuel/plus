@@ -1,0 +1,30 @@
+{
+  "name": "yamie",
+  "version": "1.0.0",
+  "description": "The biggest online mall around town",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XamuelUG/yamie.git"
+  },
+  "keywords": [
+    "yamie",
+    "yamie",
+    "uganda"
+  ],
+  "author": "XamuelUG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XamuelUG/yamie/issues"
+  },
+  "homepage": "https://github.com/XamuelUG/yamie#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
