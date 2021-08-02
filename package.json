@@ -1,5 +1,5 @@
 {
-  "name": "yamie",
+  "name": "plus",
   "version": "1.0.0",
   "description": "The biggest online mall around town",
   "main": "index.js",
@@ -8,19 +8,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/XamuelUG/yamie.git"
+    "url": "git+https://github.com/XamuelUG/plus.git"
   },
   "keywords": [
-    "yamie",
-    "yamie",
+    "plus",
+    "plus",
     "uganda"
   ],
   "author": "XamuelUG",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/XamuelUG/yamie/issues"
+    "url": "https://github.com/XamuelUG/plus/issues"
   },
-  "homepage": "https://github.com/XamuelUG/yamie#readme",
+  "homepage": "https://github.com/XamuelUG/plus#readme",
   "dependencies": {
     "express": "^4.17.1"
   },
