@@ -1,0 +1,75 @@
+.main-banner-ctr {
+  width: 72%;
+  margin: 25px auto;
+  display: flex;
+  height: 45vh;
+}
+.ctg-li-ctr {
+  flex: 1.5;
+  height: 100%;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: red;
+}
+.banner-pm {
+  flex: 4;
+  height: 100%;
+}
+.banner-pm-sm {
+  margin-left: 15px;
+  flex: 1.5;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.banner-pm-sm > div {
+  height: 49%;
+}
+
+/*welcome to plus*/
+.main-welcome-ctr {
+  width: 72%;
+  margin: 25px auto;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+.welcome-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 5px;
+  text-transform: capitalize;
+}
+.welcome-items {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 25px 0px;
+}
+.welcome-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.welcome-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: fill;
+  margin: 5px;
+  border-radius: 3px;
+}
+
+/*welcome to plus*/
+
+/*products on scroll container*/
+.products-scroll-ctr {
+  width: 72%;
+  margin: 25px auto;
+  display: flex;
+  height: 45vh;
+}
+/*products on scroll container*/

@@ -12,10 +12,153 @@ header {
   width: 72%;
   margin: 0px auto;
 }
+.hdr-nav-ctr {
+  z-index: 20;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0px;
+  background-color: #fff;
+  height: 8vh;
+}
 .hdr-nav {
   width: 72%;
+  height: 100%;
   margin: auto;
-  background-color: red;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+.hdr-nav-logo {
+  flex: 0.75;
+  font-size: 24px;
+}
+.hdr-search-ctr {
+  flex: 2;
+  height: 70%;
+}
+.hdr-search {
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0, 0.1);
+  border-radius: 30px;
+  box-shadow: 0px 0px 5px #e4e1e1;
+}
+.hdr-search:hover {
+  box-shadow: 0px 0px 15px #e4e1e1;
+}
+.hdr-search > input {
+  width: 80%;
+  margin: auto;
+  padding: 4px 1px;
+  font-size: 20px;
+  border: 0;
+  outline: none;
+}
+.search-icon {
+  padding: 4px 1px;
+  width: 10%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+}
+
+/*user actions in the nav*/
+.hdr-user {
+  flex: 1.5;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.hdr-user > div {
+  position: relative;
+}
+.hdr-user > div > span {
+  margin: 0px 8px;
+  font-size: 17px;
+}
+.hdr-user-account,
+.hdr-user-help {
+  flex: 3;
+}
+.hdr-user-cart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0.5;
+}
+.hdr-user > div:hover {
+  color: #ffbb00;
+  cursor: pointer;
+}
+/*user actions in the nav*/
+
+/***
+dropdown in the header
+*/
+
+.-help-list {
+  position: absolute;
+  top: 40px;
+  list-style: none;
+  width: 160px;
+  background-color: white;
+  left: -15px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  box-shadow: 0px 0px 12px #c2c1c1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* display: none; */
+}
+.-a-btn {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #ffbb00;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.4);
+  color: white;
+  margin: 5px 0px;
+}
+.-help-list > a > li {
+  margin: 5px 0px;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 14.5px;
+}
+.-help-list > a > li > i,
+.-a-btn > i {
+  margin-right: 5px;
+}
+.-help-list > a > li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: rgb(255, 255, 255);
+}
+.-dropdown {
+  padding: 5px;
+  outline: 0;
+  border: 0;
+  background-color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.-dropdown span {
+  margin: 0px 5px;
+  font-size: 17px;
+}
+.-dropdown:hover {
+  color: #ffbb00;
+}
+
+/***
+dropdown in the header
+*/
