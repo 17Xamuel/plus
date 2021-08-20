@@ -21,18 +21,74 @@ class Home extends Component {
         <MainHeader />
         <main>
           <section className="main-banner-ctr">
-            <div className="ctg-li-ctr">
-              <ul className="ctg-li">
-                <li>Xamuel</li>
-                <li>Xamuel</li>
-                <li>Xamuel</li>
-                <li>Xamuel</li>
-                <li>Xamuel</li>
-                <li>Xamuel</li>
-                <li>Xamuel</li>
-                <li>Xamuel</li>
-              </ul>
-            </div>
+            <ul className="ctg-li">
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-shopping-basket ctg-icon"></i>
+                  EasyMarket with Yammie
+                </span>
+              </li>
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-pizza-slice ctg-icon"></i>
+                  Fast Foods &amp; Drinks
+                </span>
+              </li>
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-layer-group ctg-icon"></i>
+                  Supermarket
+                </span>
+              </li>
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-headphones-alt ctg-icon"></i>
+                  Phones &amp; Accessories
+                </span>
+              </li>
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-charging-station ctg-icon"></i>
+                  Electronics
+                </span>
+              </li>
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-tshirt ctg-icon"></i>
+                  Clothes &amp; Shoes
+                </span>
+              </li>
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-utensils ctg-icon"></i>
+                  Kitchen stuff &amp; Utensils
+                </span>
+              </li>
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-desktop ctg-icon"></i>
+                  Computing &amp; Accessories
+                </span>
+              </li>
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-child ctg-icon"></i>
+                  Kid's Section
+                </span>
+              </li>
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-desktop ctg-icon"></i>
+                  Cleaning, Healthy &amp; Beauty
+                </span>
+              </li>
+              <li className="ctg-item">
+                <span className="ctg-name">
+                  <i className="las la-paperclip ctg-icon"></i>
+                  Stationery
+                </span>
+              </li>
+            </ul>
             <div className="banner-pm">
               <img
                 src={Banner}
