@@ -3,9 +3,22 @@ import React, { Component } from "react";
 //components
 import MainHeader from "../../Components/MainHeader";
 import Products from "../../Components/products_scroll";
+import MainFooter from "../../Components/MainFooter";
 
 //assets
 import Banner from "../../assets/banner.jpg";
+import welcome_shoes from "../../assets/airmax.jpg";
+import welcome_phone_accessories from "../../assets/studio-speech.png";
+import welcome_sandals from "../../assets/men_sandals.jpg";
+import welcome_utencils from "../../assets/utencils.jpg";
+import welcome_tshirts from "../../assets/cloth4.jpg";
+import welcome_drinks from "../../assets/milk.jpg";
+import welcome_foodstuffs from "../../assets/super_rice.png";
+import welcome_electronics from "../../assets/tea.jpg";
+import welcome_laptop_accessories from "../../assets/hp_battery.jpg";
+import welcome_music from "../../assets/headsets.png";
+import welcome_computers from "../../assets/hp-elitebook.png";
+import welcome_cleaning from "../../assets/cleaning.jpg";
 
 //styles
 import "../Design/home.css";
@@ -25,7 +38,7 @@ class Home extends Component {
               <li className="ctg-item">
                 <span className="ctg-name">
                   <i className="las la-shopping-basket ctg-icon"></i>
-                  EasyMarket with Yammie
+                  EasyMarket On Plus
                 </span>
               </li>
               <li className="ctg-item">
@@ -128,47 +141,50 @@ class Home extends Component {
               <div className="welcome-items">
                 <div className="welcome-item">
                   <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
+                    <img src={welcome_utencils} alt="Shop Foods on Yammie" />
                   </div>
                   <div>
-                    <div>Food Stuffs</div>
-                  </div>
-                </div>
-                <div className="welcome-item">
-                  <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
-                  </div>
-                  <div>
-                    <div>Food Stuffs</div>
+                    <div>Utencils</div>
                   </div>
                 </div>
                 <div className="welcome-item">
                   <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
+                    <img src={welcome_tshirts} alt="T shirts on plus" />
                   </div>
                   <div>
-                    <div>Food Stuffs</div>
-                  </div>
-                </div>
-                <div className="welcome-item">
-                  <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
-                  </div>
-                  <div>
-                    <div>Food Stuffs</div>
+                    <div>T Shirts</div>
                   </div>
                 </div>
                 <div className="welcome-item">
                   <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
+                    <img src={welcome_sandals} alt="Get Sandals on Plus" />
                   </div>
                   <div>
-                    <div>Food Stuffs</div>
+                    <div>Sandals</div>
                   </div>
                 </div>
                 <div className="welcome-item">
                   <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
+                    <img
+                      src={welcome_phone_accessories}
+                      alt="Shop your Phone accessories from plus"
+                    />
+                  </div>
+                  <div>
+                    <div>Phone Accessories</div>
+                  </div>
+                </div>
+                <div className="welcome-item">
+                  <div>
+                    <img src={welcome_shoes} alt="Shop Nice Shoes from plus" />
+                  </div>
+                  <div>
+                    <div>Shoes</div>
+                  </div>
+                </div>
+                <div className="welcome-item">
+                  <div>
+                    <img src={welcome_foodstuffs} alt="Shop Foods on Plus" />
                   </div>
                   <div>
                     <div>Food Stuffs</div>
@@ -178,50 +194,62 @@ class Home extends Component {
               <div className="welcome-items">
                 <div className="welcome-item">
                   <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
+                    <img
+                      src={welcome_music}
+                      alt="Get Music Accessories on Plus"
+                    />
                   </div>
                   <div>
-                    <div>Food Stuffs</div>
-                  </div>
-                </div>
-                <div className="welcome-item">
-                  <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
-                  </div>
-                  <div>
-                    <div>Food Stuffs</div>
+                    <div>For Music</div>
                   </div>
                 </div>
                 <div className="welcome-item">
                   <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
+                    <img
+                      src={welcome_electronics}
+                      alt="One Stop for electronics"
+                    />
                   </div>
                   <div>
-                    <div>Food Stuffs</div>
-                  </div>
-                </div>
-                <div className="welcome-item">
-                  <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
-                  </div>
-                  <div>
-                    <div>Food Stuffs</div>
+                    <div>Electronics</div>
                   </div>
                 </div>
                 <div className="welcome-item">
                   <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
+                    <img src={welcome_drinks} alt="Get Cold Drinks on Plus" />
                   </div>
                   <div>
-                    <div>Food Stuffs</div>
+                    <div>Drinks</div>
                   </div>
                 </div>
                 <div className="welcome-item">
                   <div>
-                    <img src={Banner} alt="Shop Foods on Yammie" />
+                    <img
+                      src={welcome_cleaning}
+                      alt="Cleaning Materials On Plus"
+                    />
                   </div>
                   <div>
-                    <div>Food Stuffs</div>
+                    <div>Cleaning</div>
+                  </div>
+                </div>
+                <div className="welcome-item">
+                  <div>
+                    <img src={welcome_computers} alt="Shop Foods on Yammie" />
+                  </div>
+                  <div>
+                    <div>Computers</div>
+                  </div>
+                </div>
+                <div className="welcome-item">
+                  <div>
+                    <img
+                      src={welcome_laptop_accessories}
+                      alt="Shop Foods on Yammie"
+                    />
+                  </div>
+                  <div>
+                    <div>PC Accessories</div>
                   </div>
                 </div>
               </div>
@@ -246,6 +274,7 @@ class Home extends Component {
             <Products />
           </section>
         </main>
+        <MainFooter />
       </>
     );
   }

@@ -30,7 +30,11 @@ header {
 }
 .hdr-nav-logo {
   flex: 0.75;
-  font-size: 24px;
+}
+.hdr-nav-logo > img {
+  width: 70%;
+  height: 30%;
+  object-fit: contain;
 }
 .hdr-search-ctr {
   flex: 2;

@@ -50,6 +50,7 @@
 .banner-pm {
   flex: 4;
   height: 100%;
+  box-shadow: 0px 0px 10px #cccbcb;
 }
 .banner-pm-sm {
   margin-left: 15px;
@@ -60,6 +61,7 @@
   justify-content: space-between;
 }
 .banner-pm-sm > div {
+  box-shadow: 0px 0px 10px #cccbcb;
   height: 49%;
 }
 
@@ -69,6 +71,7 @@
   margin: 25px auto;
   border-radius: 5px;
   background-color: white;
+  box-shadow: 0px 0px 10px #cccbcb;
   padding: 10px;
 }
 .welcome-hdr {
@@ -93,9 +96,8 @@
 }
 .welcome-item img {
   width: 120px;
-  height: 120px;
+  height: 100px;
   object-fit: fill;
-  margin: 5px;
   border-radius: 3px;
 }
 

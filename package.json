@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/XamuelUG/plus#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mysql8": "^2.17.3"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"

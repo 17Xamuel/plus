@@ -1,0 +1,119 @@
+footer {
+  padding: 20px 0px 50px 0px;
+  background-color: #000;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 15px;
+}
+.ftr-ctr {
+  width: 85%;
+  margin: auto;
+}
+/* upper-section */
+.ftr-upper-flex {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.ftr-logo > img {
+  width: 90%;
+  height: 80px;
+  object-fit: contain;
+}
+.ftr-logo > div {
+  margin: 5px 0px;
+  font-size: 12px;
+}
+.ftr-app {
+  margin: 20px 0px;
+}
+.ftr-social {
+  margin: 20px 0px;
+}
+.ftr-social > div {
+  margin: 15px 10px;
+  font-size: 13px;
+}
+.ftr-social > span {
+  margin: 15px 10px;
+}
+.ftr-hdg {
+  font-size: 16px;
+  font-weight: 550;
+  margin: 15px 0px;
+}
+.ftr-link {
+  margin: 10px;
+}
+
+/* upper-section */
+/* form */
+.ftr-up {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.comment {
+  font-size: 15px;
+  outline: none;
+  padding: 10px 5px;
+  width: 250px;
+  margin: 10px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+.contact {
+  font-size: 15px;
+  outline: none;
+  padding: 10px 5px;
+  width: 250px;
+  margin: 10px 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.comment:focus,
+.contact:focus {
+  border: 1px solid #ffbb00;
+  box-shadow: 0px 0px 5px #ffbb00;
+}
+
+.footer-form-button {
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  border: 0px;
+  outline: none;
+  background-color: #ffbb00;
+  margin: 5px 5px;
+  border-radius: 5px;
+  width: 40%;
+  opacity: 0.8;
+  transition: all 0.4s ease-in-out;
+}
+.footer-form-button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+/* form */
+/* lower-section */
+.ftr-lw-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.85);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.85);
+  padding: 10px 0px;
+  margin: 10px 0px;
+}
+.ftr-lw-flex > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ftr-lw-flex > div > div {
+  margin: 0px 10px;
+}
+.ftr-lw-center {
+  text-align: center;
+}
+/* lower-section */

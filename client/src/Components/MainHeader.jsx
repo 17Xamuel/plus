@@ -9,6 +9,9 @@ import User from "@material-ui/icons/PersonOutlined";
 //styling
 import "../Design/MainHeader.css";
 
+//assets
+import PlusLogo from "../assets/logos/plus_logo_black.png";
+
 class MainHeader extends Component {
   constructor(props) {
     super(props);
@@ -38,7 +41,9 @@ class MainHeader extends Component {
           </div>
           <nav className="hdr-nav-ctr">
             <div className="hdr-nav">
-              <div className="hdr-nav-logo">PLUS</div>
+              <div className="hdr-nav-logo">
+                <img src={PlusLogo} alt="" />
+              </div>
               <div className="hdr-search-ctr">
                 <div className="hdr-search">
                   <input type="text" placeholder="Search Plus...." />
