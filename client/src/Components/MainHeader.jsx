@@ -5,6 +5,7 @@ import Help from "@material-ui/icons/HelpOutline";
 import ExpandUpIcon from "@material-ui/icons/ExpandLess";
 import ExpandDownIcon from "@material-ui/icons/ExpandMore";
 import User from "@material-ui/icons/PersonOutlined";
+import Menu from "@material-ui/icons/MenuOutlined";
 
 //styling
 import "../Design/MainHeader.css";
@@ -41,6 +42,9 @@ class MainHeader extends Component {
           </div>
           <nav className="hdr-nav-ctr">
             <div className="hdr-nav">
+              <div className="menu-toggle">
+                <Menu fontSize="large" />
+              </div>
               <div className="hdr-nav-logo">
                 <img src={PlusLogo} alt="" />
               </div>
@@ -175,6 +179,15 @@ class MainHeader extends Component {
                   <Cart />
                   <span>Cart</span>
                 </div>
+              </div>
+              <div className="search-i-sm">
+                <SearchIcon fontSize="large" />
+              </div>
+              <div className="user-i-sm">
+                <User fontSize="large" />
+              </div>
+              <div className="cart-i-sm">
+                <Cart fontSize="large" />
               </div>
             </div>
           </nav>

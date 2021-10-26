@@ -18,7 +18,7 @@ header {
   position: sticky;
   top: 0px;
   background-color: #fff;
-  height: 8vh;
+  height: 8.5vh;
 }
 .hdr-nav {
   width: 72%;
@@ -28,12 +28,15 @@ header {
   justify-content: space-between;
   align-items: center;
 }
+.menu-toggle {
+  display: none;
+}
 .hdr-nav-logo {
   flex: 0.75;
 }
 .hdr-nav-logo > img {
-  width: 70%;
-  height: 30%;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
 }
 .hdr-search-ctr {
@@ -163,6 +166,52 @@ dropdown in the header
   color: #ffbb00;
 }
 
+.user-search-sm {
+  display: none;
+}
+.search-i-sm,
+.user-i-sm,
+.cart-i-sm {
+  display: none;
+}
+
 /***
 dropdown in the header
+*/
+
+@media screen and (max-width: 1024px) {
+  .hdr-banner {
+    width: 95%;
+  }
+  .hdr-nav {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hdr-search-ctr,
+  .hdr-user {
+    display: none;
+  }
+  .hdr-nav-logo > img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+  }
+  .search-i-sm,
+  .user-i-sm,
+  .cart-i-sm,
+  .menu-toggle {
+    display: block;
+  }
+
+  /* .user-search-sm {
+    display: flex;
+  } */
+  /* .user-search-sm > div {
+    margin-left: 25px;
+  } */
+}
+/***
+@media queries and the screen
 */

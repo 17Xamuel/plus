@@ -32,7 +32,7 @@ class Home extends Component {
     return (
       <>
         <MainHeader />
-        <main>
+        {/* <main>
           <section className="main-banner-ctr">
             <ul className="ctg-li">
               <li className="ctg-item">
@@ -274,7 +274,7 @@ class Home extends Component {
             <Products />
           </section>
         </main>
-        <MainFooter />
+        <MainFooter /> */}
       </>
     );
   }
