@@ -179,7 +179,7 @@ dropdown in the header
 dropdown in the header
 */
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
   .hdr-banner {
     width: 95%;
   }

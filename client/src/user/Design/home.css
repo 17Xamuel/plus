@@ -111,3 +111,31 @@
   height: 45vh;
 }
 /*products on scroll container*/
+
+/**
+media queries
+*/
+
+@media screen and (max-width: 1200px) {
+  .main-banner-ctr {
+    width: 95%;
+  }
+  .main-welcome-ctr {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .banner-pm {
+    flex: 3;
+  }
+}
+@media screen and (max-width: 800px) {
+  .welcome-items {
+    /* display: grid; */
+    grid-template-columns: repeat(3, 1fr);
+    /* margin: 32px 0px; */
+    /* grid-row: 10px; */
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+}
