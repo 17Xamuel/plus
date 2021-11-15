@@ -131,11 +131,19 @@ media queries
 }
 @media screen and (max-width: 800px) {
   .welcome-items {
-    /* display: grid; */
     grid-template-columns: repeat(3, 1fr);
-    /* margin: 32px 0px; */
-    /* grid-row: 10px; */
     row-gap: 15px;
     column-gap: 15px;
+  }
+  .welcome-item img {
+    width: 100px;
+    height: 80px;
+    object-fit: fill;
+    border-radius: 3px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .welcome-hdr > span:nth-child(2) {
+    display: none;
   }
 }
