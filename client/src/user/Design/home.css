@@ -123,6 +123,9 @@ media queries
   .main-welcome-ctr {
     width: 95%;
   }
+  .products-scroll-ctr {
+    width: 95%;
+  }
 }
 @media screen and (max-width: 1024px) {
   .banner-pm {
@@ -142,7 +145,32 @@ media queries
     border-radius: 3px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .ctg-li {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner-pm-sm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .banner-pm-sm {
+    display: none;
+  }
+  .main-banner-ctr {
+    height: 36vh;
+  }
+}
+
 @media screen and (max-width: 500px) {
+  .main-banner-ctr {
+    height: 32vh;
+  }
   .welcome-hdr > span:nth-child(2) {
     display: none;
   }

@@ -6,6 +6,7 @@ import ExpandUpIcon from "@material-ui/icons/ExpandLess";
 import ExpandDownIcon from "@material-ui/icons/ExpandMore";
 import User from "@material-ui/icons/PersonOutlined";
 import Menu from "@material-ui/icons/MenuOutlined";
+import Close from "@material-ui/icons/Close";
 
 //styling
 import "../Design/MainHeader.css";
@@ -19,6 +20,7 @@ class MainHeader extends Component {
     this.state = {
       helpDropDownActive: false,
       userDropDownActive: false,
+      sideNav: false,
     };
   }
   focus = () => {
@@ -36,13 +38,247 @@ class MainHeader extends Component {
   render() {
     return (
       <>
+        <div
+          className="sidenav-ctr"
+          style={
+            this.state.sideNav
+              ? { width: "100%", left: "0px" }
+              : { left: "-70%", width: "0px" }
+          }
+        >
+          <button
+            className="close-side-nav"
+            onClick={() => {
+              this.setState({ ...this.state, sideNav: !this.state.sideNav });
+            }}
+          >
+            <Close fontSize="medium" />
+          </button>
+          <div className="side-nav-content">
+            <ul className="sd-ns1 sd-ns">
+              <div className="sd-hdr">Shop These Categories - Plus</div>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-shopping-basket ctg-icon"></i>
+                  EasyMarket On Plus
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-pizza-slice ctg-icon"></i>
+                  Fast Foods &amp; Drinks
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-layer-group ctg-icon"></i>
+                  Supermarket
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-headphones-alt ctg-icon"></i>
+                  Phones &amp; Accessories
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-charging-station ctg-icon"></i>
+                  Electronics
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-tshirt ctg-icon"></i>
+                  Clothes &amp; Shoes
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-utensils ctg-icon"></i>
+                  Kitchen stuff &amp; Utensils
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-desktop ctg-icon"></i>
+                  Computing &amp; Accessories
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-child ctg-icon"></i>
+                  Kid's Section
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-desktop ctg-icon"></i>
+                  Cleaning, Healthy &amp; Beauty
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-paperclip ctg-icon"></i>
+                  Stationery
+                </span>
+              </li>
+            </ul>
+            <ul className="sd-ns1 sd-ns">
+              <div className="sd-hdr">Shop These Categories - Plus</div>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-shopping-basket ctg-icon"></i>
+                  EasyMarket On Plus
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-pizza-slice ctg-icon"></i>
+                  Fast Foods &amp; Drinks
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-layer-group ctg-icon"></i>
+                  Supermarket
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-headphones-alt ctg-icon"></i>
+                  Phones &amp; Accessories
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-charging-station ctg-icon"></i>
+                  Electronics
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-tshirt ctg-icon"></i>
+                  Clothes &amp; Shoes
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-utensils ctg-icon"></i>
+                  Kitchen stuff &amp; Utensils
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-desktop ctg-icon"></i>
+                  Computing &amp; Accessories
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-child ctg-icon"></i>
+                  Kid's Section
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-desktop ctg-icon"></i>
+                  Cleaning, Healthy &amp; Beauty
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-paperclip ctg-icon"></i>
+                  Stationery
+                </span>
+              </li>
+            </ul>
+            <ul className="sd-ns1 sd-ns">
+              <div className="sd-hdr">Shop These Categories - Plus</div>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-shopping-basket ctg-icon"></i>
+                  EasyMarket On Plus
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-pizza-slice ctg-icon"></i>
+                  Fast Foods &amp; Drinks
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-layer-group ctg-icon"></i>
+                  Supermarket
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-headphones-alt ctg-icon"></i>
+                  Phones &amp; Accessories
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-charging-station ctg-icon"></i>
+                  Electronics
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-tshirt ctg-icon"></i>
+                  Clothes &amp; Shoes
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-utensils ctg-icon"></i>
+                  Kitchen stuff &amp; Utensils
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-desktop ctg-icon"></i>
+                  Computing &amp; Accessories
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-child ctg-icon"></i>
+                  Kid's Section
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-desktop ctg-icon"></i>
+                  Cleaning, Healthy &amp; Beauty
+                </span>
+              </li>
+              <li className="sd-item">
+                <span className="sd-item-name">
+                  <i className="las la-paperclip ctg-icon"></i>
+                  Stationery
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
         <header>
           <div className="hdr-banner-ctr">
             <div className="hdr-banner">Banner</div>
           </div>
           <nav className="hdr-nav-ctr">
             <div className="hdr-nav">
-              <div className="menu-toggle">
+              <div
+                className="menu-toggle"
+                onClick={() => {
+                  this.setState({
+                    ...this.state,
+                    sideNav: !this.state.sideNav,
+                  });
+                }}
+              >
                 <Menu fontSize="large" />
               </div>
               <div className="hdr-nav-logo">

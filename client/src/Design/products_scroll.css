@@ -100,3 +100,15 @@
 .-ct-item-price-before {
   text-decoration: line-through;
 }
+
+/*media queries*/
+
+/*media queries*/
+@media screen and (max-width: 1200px) {
+  .main-banner-ctr {
+    width: 95%;
+  }
+  .main-welcome-ctr {
+    width: 95%;
+  }
+}

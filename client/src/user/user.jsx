@@ -18,6 +18,7 @@ function User() {
           <Route path="login" element={<Login />} />
           <Route path="new" element={<Register />} />
         </Route>
+        {/* <Route path="/seller" element={<Admin}/> */}
       </Routes>
     </BrowserRouter>
   );

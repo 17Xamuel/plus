@@ -113,13 +113,13 @@ class MainFooter extends Component {
             </div>
           </div>
           <div className="ftr-lw-flex">
-            <div className="">
+            <div className="ftr-lw-flex-ctr-1">
               <div>Plus Shopping</div>
               <div>Plus Shopping</div>
               <div>Plus Shopping</div>
               <div>Plus Shopping</div>
             </div>
-            <div className="">
+            <div className="ftr-lw-flex-ctr-2">
               <div>Plus Shopping</div>
               <div>Plus Shopping</div>
             </div>

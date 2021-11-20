@@ -178,6 +178,47 @@ dropdown in the header
 /***
 dropdown in the header
 */
+/*side nav*/
+.sidenav-ctr {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  background-color: white;
+  z-index: 21;
+  display: none;
+  height: 100%;
+  transition: all 0.5s ease-in-out;
+  overflow-y: scroll;
+}
+.close-side-nav {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffd97b;
+  outline: none;
+  color: white;
+  border-radius: 21px;
+  width: 42px;
+  height: 42px;
+}
+.sd-ns {
+  list-style: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.sd-hdr {
+  font-size: 20;
+  font-weight: bold;
+}
+.sd-item {
+  margin: 5px 10px;
+}
+.side-nav-content {
+  padding: 25px 10%;
+}
+/*side nav*/
+
+/*media screens*/
 
 @media screen and (max-width: 1200px) {
   .hdr-banner {
@@ -185,6 +226,11 @@ dropdown in the header
   }
   .hdr-nav {
     width: 95%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .sidenav-ctr {
+    display: block;
   }
 }
 
@@ -204,13 +250,6 @@ dropdown in the header
   .menu-toggle {
     display: block;
   }
-
-  /* .user-search-sm {
-    display: flex;
-  } */
-  /* .user-search-sm > div {
-    margin-left: 25px;
-  } */
 }
 /***
 @media queries and the screen
