@@ -1,0 +1,241 @@
+.main-CatalogCtr {
+  width: 100%;
+  display: flex;
+  margin-bottom: 25px;
+}
+
+.pdts-CatalogCtr {
+  flex: 3;
+  margin-left: 10px;
+}
+.pdts-CatalogCtr > div:nth-child(1) {
+  height: 50px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 17px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+.pdts-CatalogCtr > div:nth-child(2) {
+  margin-top: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(185px, 1fr));
+  column-gap: 1.5rem;
+  row-gap: 0.75rem;
+  position: relative;
+}
+.pdt-CatalogCtr {
+  height: 300px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 10px;
+}
+/**
+pdt-CatalogCtr - styles for the product
+*/
+.pdt-CatalogCtr-discount {
+  position: absolute;
+  background-color: #ffbb00;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 3px;
+}
+.pdt-CatalogCtr-img {
+  width: 100%;
+  height: 55%;
+}
+.pdt-CatalogCtr-img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.pdt-CatalogCtr-name {
+  padding: 2px 5px;
+}
+.pdt-CatalogCtr-current-price {
+  padding: 1px 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.pdt-CatalogCtr-prev-price {
+  padding: 1px 5px;
+  text-decoration: line-through;
+}
+.pdt-CatalogCtr-btn-ctr {
+  padding: 5px;
+}
+.pdt-CatalogCtr-btn-ctr > button {
+  width: 100%;
+  padding: 7px 0px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffbb00;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+/**
+pdt-CatalogCtr - styles for the product
+*/
+.sort-CatalogCtr {
+  flex: 0.75;
+  height: fit-content;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+/**
+Sort Container
+*/
+.ctlg-sort {
+  width: 100%;
+}
+.ctlg-sort > form {
+  padding: 5px 0px;
+}
+.ctlg-sort > h3 {
+  padding: 5px 0px 0px 15px;
+}
+.ctlg-sort > form > .sort-list {
+  padding-left: 25px;
+  list-style-type: none;
+}
+.display-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0px;
+}
+.display-price > input {
+  width: 75px;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  outline: none;
+}
+.input-field {
+  padding: 5px 10px;
+}
+.input-field > label {
+  padding-left: 5px;
+}
+.sort-btn {
+  width: 75%;
+  margin: 5px 25px;
+  padding: 5px 0px;
+  box-shadow: 3px 3px 5px #e2e2e2;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: white;
+  background: linear-gradient(
+    to right,
+    rgba(250, 164, 6, 0.9),
+    rgba(250, 164, 6, 0.7)
+  );
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.sort-btn:hover {
+  background: linear-gradient(
+    to left,
+    rgba(250, 164, 6, 0.9),
+    rgba(250, 164, 6, 0.7)
+  );
+  opacity: 0.8;
+}
+
+/* price slider*/
+.price-form {
+  position: relative;
+  width: 100%;
+}
+.price-slide {
+  margin: 10px 0px;
+  width: 100%;
+}
+.slider {
+  position: relative;
+  z-index: 1;
+  height: 10px;
+  margin: 0 15px;
+}
+.slider > .track {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 5px;
+  background-color: black;
+}
+.slider > .range {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #ffbb00;
+}
+.slider > .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 25px;
+  height: 25px;
+  background-color: #ffbb00;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 0px rgba(238, 156, 4, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.slider > .thumb.hover {
+  box-shadow: 0px 0px 0px 5px rgba(238, 156, 4, 0.2);
+}
+.slider > .thumb.active {
+  box-shadow: 0px 0px 0px 10px rgba(238, 156, 4, 0.3);
+}
+.slider > .thumb.left {
+  left: 0;
+  transform: translate(-15px, -8px);
+}
+.slider > .thumb.right {
+  right: 0;
+  transform: translate(10px, -8px);
+}
+input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  -webkit-appearance: none;
+  background-color: #ffbb00;
+}
+
+/* end of price slider*/
+/**
+Sort Container
+*/

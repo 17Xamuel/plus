@@ -1,0 +1,11 @@
+.ctg-banner-ctr {
+  width: 72%;
+  margin: 25px auto;
+  height: 45vh;
+}
+.ctg-banner-ctr > img {
+  border-radius: 5px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
