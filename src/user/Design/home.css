@@ -47,11 +47,55 @@
   cursor: pointer;
 }
 /* categories */
+
+/*banner slider - promotion images*/
 .banner-pm {
   flex: 4;
   height: 100%;
   box-shadow: 0px 0px 10px #cccbcb;
+  position: relative;
 }
+.banner-pm-indicators {
+  position: absolute;
+  left: 40%;
+  bottom: 5px;
+}
+.banner-pm-indicators > button {
+  outline: none;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0px 5px;
+  cursor: pointer;
+}
+.banner-pm-indicators > button.banner-pm-indicator-active {
+  background-color: #ffbb00;
+}
+.banner-pm-btns-left,
+.banner-pm-btns-right {
+  position: absolute;
+  top: 45%;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-pm-btns-left {
+  left: 5px;
+}
+.banner-pm-btns-right {
+  right: 5px;
+}
+/*banner slider - promotion images*/
 .banner-pm-sm {
   margin-left: 15px;
   flex: 1.5;

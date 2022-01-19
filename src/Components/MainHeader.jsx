@@ -13,6 +13,7 @@ import "../Design/MainHeader.css";
 
 //assets
 import PlusLogo from "../assets/logos/plus_logo_black.png";
+import { Link } from "react-router-dom";
 
 class MainHeader extends Component {
   constructor(props) {
@@ -281,9 +282,11 @@ class MainHeader extends Component {
               >
                 <Menu fontSize="large" />
               </div>
-              <div className="hdr-nav-logo">
-                <img src={PlusLogo} alt="" />
-              </div>
+              <Link to="/">
+                <div className="hdr-nav-logo">
+                  <img src={PlusLogo} alt="" />
+                </div>
+              </Link>
               <div className="hdr-search-ctr">
                 <div className="hdr-search">
                   <input type="text" placeholder="Search Plus...." />

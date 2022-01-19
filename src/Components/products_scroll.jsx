@@ -1,19 +1,39 @@
 import React from "react";
 
-//assets
-import Banner from "../assets/airmax.jpg";
+//components
+import Item from "./products_scroll_item";
 
 //the styling...
 import "../Design/products_scroll.css";
+import { Link } from "react-router-dom";
+import { useRef } from "react";
 
 export default function Products(props) {
-  const scroll_next = () => {};
+  const scrollBackRef = useRef(null);
   return (
     <div className="-ct -b-x">
-      <button className="-sc-b">
+      <button
+        className="-sc-b"
+        onClick={() => {
+          scrollBackRef.current.scrollBy({
+            top: 0,
+            left: -250,
+            behavior: "smooth",
+          });
+        }}
+      >
         <i className="las la-chevron-left"></i>
       </button>
-      <button className="-sc-n" onClick={scroll_next}>
+      <button
+        className="-sc-n"
+        onClick={() => {
+          scrollBackRef.current.scrollBy({
+            top: 0,
+            left: 250,
+            behavior: "smooth",
+          });
+        }}
+      >
         <i className="las la-chevron-right"></i>
       </button>
       <div className="-ch-all">
@@ -22,307 +42,14 @@ export default function Products(props) {
           Check All <i className="las la-chevron-right"></i>
         </span>
       </div>
-      <div className="-scroll  -ct-trending">
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
-        <div className="-ct-item">
-          <div>
-            <img src={Banner} alt="PLUSPROMOTION" />
-          </div>
-          <div className="">
-            <div className="-ct-item-name">
-              Nike Air - Best Step Shoe from plus with a cheap price
-            </div>
-            <div className="-ct-item-price">UGX 500 - UGX 750</div>
-            <div className="-ct-item-price-before">UGX 750</div>
-          </div>
-        </div>
+      <div className="-scroll  -ct-trending" ref={scrollBackRef}>
+        {[1, 2, 3, 4, 5, 6, 7, 8, 9, , 1, 3, 4, 5].map((v, i) => {
+          return (
+            <Link to="/item/id">
+              <Item key={i} />
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

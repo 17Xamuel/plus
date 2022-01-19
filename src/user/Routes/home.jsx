@@ -26,8 +26,23 @@ import "../Design/home.css";
 class Home extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      bannerCounter: 1,
+      bannerTimerStart: 0,
+    };
   }
+  componentDidMount = () => {
+    this.bannerTimer();
+  };
+  bannerTimer = () => {
+    setInterval(() => {
+      this.setState({
+        ...this.state,
+        bannerCounter:
+          this.state.bannerCounter === 6 ? 1 : this.state.bannerCounter + 1,
+      });
+    }, 5000);
+  };
   render() {
     return (
       <>
@@ -103,13 +118,7 @@ class Home extends Component {
               </li>
             </ul>
             <div className="banner-pm">
-              <img
-                src={Banner}
-                alt="BANNER"
-                width="100%"
-                height="100%"
-                style={{ borderRadius: "5px" }}
-              />
+              <PromotionImage active={this.state.bannerCounter} />
             </div>
             <div className="banner-pm-sm">
               <div className="">
@@ -281,3 +290,32 @@ class Home extends Component {
 }
 
 export default Home;
+
+const PromotionImage = (props) => {
+  return (
+    <>
+      <div className="banner-pm-indicators">
+        {[1, 2, 3, 4, 5, 6].map((v, i) => (
+          <button
+            className={
+              props.active === i + 1 ? "banner-pm-indicator-active" : ""
+            }
+          ></button>
+        ))}
+      </div>
+      <img
+        src={Banner}
+        alt="BANNER"
+        width="100%"
+        height="100%"
+        style={{ borderRadius: "5px" }}
+      />
+      <button className="banner-pm-btns-left">
+        <i className="las la-chevron-left"></i>
+      </button>
+      <button className="banner-pm-btns-right">
+        <i className="las la-chevron-right"></i>
+      </button>
+    </>
+  );
+};
