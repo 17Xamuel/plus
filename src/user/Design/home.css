@@ -73,7 +73,7 @@
 .banner-pm-indicators > button.banner-pm-indicator-active {
   background-color: #ffbb00;
 }
-.banner-pm-btns-left,
+/* .banner-pm-btns-left,
 .banner-pm-btns-right {
   position: absolute;
   top: 45%;
@@ -94,7 +94,7 @@
 }
 .banner-pm-btns-right {
   right: 5px;
-}
+} */
 /*banner slider - promotion images*/
 .banner-pm-sm {
   margin-left: 15px;

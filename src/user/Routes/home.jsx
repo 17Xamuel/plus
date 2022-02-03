@@ -22,26 +22,26 @@ import welcome_cleaning from "../../assets/cleaning.jpg";
 
 //styles
 import "../Design/home.css";
+import { useState } from "react";
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
       bannerCounter: 1,
-      bannerTimerStart: 0,
     };
   }
   componentDidMount = () => {
-    this.bannerTimer();
+    this.startBannerCount();
   };
-  bannerTimer = () => {
+  startBannerCount = () => {
     setInterval(() => {
       this.setState({
         ...this.state,
         bannerCounter:
           this.state.bannerCounter === 6 ? 1 : this.state.bannerCounter + 1,
       });
-    }, 5000);
+    }, 4000);
   };
   render() {
     return (
@@ -291,15 +291,14 @@ class Home extends Component {
 
 export default Home;
 
-const PromotionImage = (props) => {
+const PromotionImage = ({ active }) => {
   return (
     <>
       <div className="banner-pm-indicators">
         {[1, 2, 3, 4, 5, 6].map((v, i) => (
           <button
-            className={
-              props.active === i + 1 ? "banner-pm-indicator-active" : ""
-            }
+            key={i}
+            className={active === i + 1 ? "banner-pm-indicator-active" : ""}
           ></button>
         ))}
       </div>
@@ -310,12 +309,6 @@ const PromotionImage = (props) => {
         height="100%"
         style={{ borderRadius: "5px" }}
       />
-      <button className="banner-pm-btns-left">
-        <i className="las la-chevron-left"></i>
-      </button>
-      <button className="banner-pm-btns-right">
-        <i className="las la-chevron-right"></i>
-      </button>
     </>
   );
 };

@@ -14,7 +14,10 @@ class Catalog extends Component {
     super(props);
     this.state = {};
   }
+
   render() {
+    const searchParams = new URLSearchParams(window.location.search);
+    console.log(searchParams.get("q"));
     return (
       <>
         <MainHeader />

@@ -18,7 +18,7 @@ header {
   position: sticky;
   top: 0px;
   background-color: #fff;
-  height: 8.5vh;
+  height: 70px;
 }
 .hdr-nav {
   width: 72%;
@@ -36,7 +36,7 @@ header {
 }
 .hdr-nav-logo > img {
   width: 150px;
-  height: 150px;
+  height: 85%;
   object-fit: contain;
 }
 .hdr-search-ctr {
@@ -60,7 +60,7 @@ header {
   width: 80%;
   margin: auto;
   padding: 4px 1px;
-  font-size: 20px;
+  font-size: 17px;
   border: 0;
   outline: none;
 }
@@ -72,6 +72,9 @@ header {
   align-items: center;
   justify-content: center;
   font-size: 100px;
+  border: none;
+  outline: none;
+  background-color: white;
 }
 
 /*user actions in the nav*/
@@ -86,17 +89,17 @@ header {
 }
 .hdr-user > div > span {
   margin: 0px 8px;
-  font-size: 17px;
+  font-size: 16px;
 }
 .hdr-user-account,
 .hdr-user-help {
-  flex: 3;
+  flex: 1;
 }
 .hdr-user-cart {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  flex: 0.5;
+  flex: 1;
 }
 .hdr-user > div:hover {
   color: #ffbb00;
