@@ -8,21 +8,29 @@ import Products from "../../Components/products_scroll";
 
 //styles
 import "../Design/home.css";
+import FormsApi from "../../api/api";
 
 class Catalog extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { products: [] };
   }
-
+  search = async (i) => {
+    let api = new FormsApi();
+    let res = await api.get(`/product/search/${i}`);
+    // console.log(res);
+    if (res !== "Error") this.setState({ ...this.state, products: res });
+  };
   render() {
     const searchParams = new URLSearchParams(window.location.search);
-    console.log(searchParams.get("q"));
+    this.search(searchParams.get("q"));
     return (
       <>
         <MainHeader />
         <main className="width-auto">
-          <CatalogCtr />
+          <div style={{ width: "100%" }}>
+            <CatalogCtr products={this.state.products} />
+          </div>
           <Products />
         </main>
 
